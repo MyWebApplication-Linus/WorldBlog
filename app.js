@@ -28,6 +28,10 @@ app.get("/contact", (req, res) => {
   res.render("contact", { contactus : contactContent});
 });
 
+app.get("/compose", (req, res) => {
+  res.render("compose");
+});
+
 app.listen(port, function() {
   console.log(`listening at http://localhost:${port}`);
 });
