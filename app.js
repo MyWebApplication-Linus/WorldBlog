@@ -20,6 +20,13 @@ app.get("/" , (req, res)=>{
   res.render("home", {firstBlog : homeStartingContent});
 });
 
+app.get("/about", (req, res) =>{
+  res.render("about", {aboutus : aboutContent });
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact", { contactus : contactContent});
+});
 
 app.listen(port, function() {
   console.log(`listening at http://localhost:${port}`);
