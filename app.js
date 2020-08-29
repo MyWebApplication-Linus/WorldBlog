@@ -55,6 +55,6 @@ app.get("/:topic", (req, res) => {
 
 });
 
-app.listen(port, function() {
-  console.log(`listening at http://localhost:${port}`);
+app.listen( process.env.PORT || port, function() {
+  //console.log(`listening at http://localhost:${port}`);
 });
